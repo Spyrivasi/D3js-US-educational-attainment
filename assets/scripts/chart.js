@@ -32,3 +32,13 @@ function transition(name) {
 		//$("#view-source-type").fadeIn(1000);
 		return fundsType();
 	}
+
+function total() {
+
+	force.gravity(0)
+		.friction(0.9)
+		.charge(function(d) { return -Math.pow(d.radius, 2) / 2.8; })
+		.on("tick", all)
+		.start();
+}
+
