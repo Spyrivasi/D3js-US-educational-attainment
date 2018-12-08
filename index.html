@@ -21,14 +21,15 @@
 </head>
 
   <header>
-       <nav>
+       <nav role="navigation">
     <ul>
-      <li><a href="#top" onmouseover="bleep.play()">Top</a></li>
-      <li><a href="#national" onmouseover="bleep.play()">National</a></li>
-      <li><a href="#regional" onmouseover="bleep.play()">Regional</a></li>
-      <li><a href="#state" onmouseover="bleep.play()">State-Level</a></li>
-    <ul>
-        </nav>
+      <li><a href="#" role="button" class="pure-button switch" id="top" onmouseover="bleep.play()">Top</a></li>
+      <li><a href="#" role="button" class="pure-button switch" id="national" onmouseover="bleep.play()">National</a></li>
+      <li><a href="#" role="button" class="pure-button switch" id="regional" onmouseover="bleep.play()">Regional</a></li>
+      <li><a href="#" role="button" class="pure-button switch" id="stateLevel" onmouseover="bleep.play()">State-Level</a></li>
+    </ul>
+	    </nav>
+
     </header>
 <body>
 	<h1 class="title" onmouseenter="msg.text='Educational Attainment in the United State';speechSynthesis.speak(msg)">Educational 
