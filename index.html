@@ -1,124 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Educational Attainment in the United States</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="assets/stylesheets/style.css" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	
-	<script>
-		var bleep = new Audio();
-		bleep.src="assets/data/Error-sound.mp3";
-	</script>
-	
-	<script>
-		var msg = new SpeechSynthesisUtterance();
-	</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-	
-  <header>
-       <nav>
-    <ul>
-       <li><a href="#top" onmouseover="bleep.play()" onmouseclick="showHide('top')">Top</a></li>
-      <li><a href="#national" onmouseover="bleep.play()" onmouseclick="showHide('nation')">National</a></li>
-      <li><a href="#regional" onmouseover="bleep.play()" onmouseclick="showHide('region')">Regional</a></li>
-      <li><a href="#state" onmouseover="bleep.play()" onmouseclick="showHide('state-level')">State-Level</a></li>
-    </ul>
-	    </nav>
-
-    </header>
-<body>
-	<h1 class="title" onmouseenter="msg.text='Educational Attainment in the United State';speechSynthesis.speak(msg)">Educational 
-		Attainment in the United States</h1>
-      
+	<head>
+		<meta charset="UTF-8">
+		<title>Educational Attainment in the United States</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="assets/stylesheets/style.css" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		
-	<p><br></p>
-	<div id="nation">
-	<h2 class="subtitle" onmouseenter="msg.text='Nation-Wide Education Level of Population in Schooling';speechSynthesis.speak(msg)">Nation-Wide
-	    Education Level of Population in Schooling</h2>
+		<script>
+			var bleep = new Audio();
+			bleep.src="assets/data/Error-sound.mp3";
+		</script>
+		
+		<script>
+			var msg = new SpeechSynthesisUtterance();
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	</head>
 	
-    <svg id="pie-chart" width="960" height="450"></svg><a name="regional"></a>
-    <p><br><br><br></p>
-	</div>
-    
-	<div name="region">
-    <h2 class="subtitle" 
-	onmouseenter="msg.text='Educational Attainment: Region-level Breakdown of University Students';speechSynthesis.speak(msg)">Educational 
-	    Attainment: Region-level Breakdown of University Students</h2>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#top" onmouseover="bleep.play()" onmouseclick="showHide('top')">Top</a></li>
+				<li><a href="#national" onmouseover="bleep.play()" onmouseclick="showHide('nation')">National</a></li>
+				<li><a href="#regional" onmouseover="bleep.play()" onmouseclick="showHide('region')">Regional</a></li>
+				<li><a href="#state" onmouseover="bleep.play()" onmouseclick="showHide('state-level')">State-Level</a></li>
+			</ul>
+		</nav>
+	</header>
 	
-    <form id="tree-form">
-        <div class="radio-toolbar">
-            <input type="radio" id="mode1" name="treeSum" value="number" checked>
-            <label for="mode1" onmouseenter="msg.text='Pursuing a Masters degree (in # of students)';speechSynthesis.speak(msg)">Pursuing
-		    a Masters degree (in # of students)</label>
-            <input type="radio" id="mode2" name="treeSum" value="percent">
-            <label for="mode2" onmouseenter="msg.text='Pursuing a Masters degree (in %)';speechSynthesis.speak(msg)">Pursuing a
-		    Masters degree (in %)</label>
-            <input type="radio" id="mode3" name="treeSum" value="male">
-            <label for="mode3" onmouseenter="msg.text='Males in College (18-24yrs)(in %)';speechSynthesis.speak(msg)">Males in College
-		    (18-24yrs)(in %)</label>
-            <input type="radio" id="mode4" name="treeSum" value="femal">
-            <label for="mode4" onmouseenter="msg.text='Females in College (18-24yrs) (in %)';speechSynthesis.speak(msg)">Females in College
-		    (18-24yrs) (in %)</label>
-        </div>
-    </form>
-	</div>
-	<p></p>
-	<div id="state-level">
-    <div id="chart"></div>
-	<a name="state"></a>
-    <p><br><br></p>
-    <h2 class="subtitle"
-	onmouseenter="msg.text='Education Level of Population in Schooling: State-level Breakdown';speechSynthesis.speak(msg)">Education 
-	    Level of Population in Schooling: State-level Breakdown</h2>
-	
-    <form id="stack-form">
-        <div class="radio-toolbar">
-            <input type="radio" id="radio1" name="mode" value="bypercent" checked>
-            <label for="radio1" onmouseenter="msg.text='Students (in %)';speechSynthesis.speak(msg)">Students (in %)</label>
-            <input type="radio" id="radio2" name="mode" value="bycount">
-            <label for="radio2" onmouseenter="msg.text='Students (in number of people)';speechSynthesis.speak(msg)">Students 
-		    (in number of people)</label>
-    </div>
-    </form>
-    <div>
-        <svg id="stacked-bar-chart"></svg>
-    </div>
-	</div>
-
-    
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="assets/scripts/script_1.js"></script>
-<script src="assets/scripts/script_2.js"></script>
-<script src="assets/scripts/script_3.js"></script>
-	<script src="assets/scripts/showHideScripts.js"></script>
-
-<script>
-    $( document ).ready(function() {
-      $(window).scroll(function(){
-        if ($(window).scrollTop() >= 300) {
-           $('nav').addClass('fixed-header');
-        }
-        else {
-           $('nav').removeClass('fixed-header');
-        }
-    });
-});
-
-/* scrollTop() >= 240
-   Should be equal the the height of the header
- */
-</script>
-	
-
-
-</body>
+	<body>
+		<h1 class="title" 
+		    onmouseenter="msg.text='Educational Attainment in the United State';speechSynthesis.speak(msg)">Educational 
+			Attainment in the United States</h1>
+		<p><br></p>
+		
+		<div id="nation">
+			<h2 class="subtitle" 
+			    onmouseenter="msg.text='Nation-Wide Education Level of Population in Schooling';speechSynthesis.speak(msg)">Nation-Wide
+				Education Level of Population in Schooling</h2>
+			<svg id="pie-chart" width="960" height="450"></svg><a name="national"></a>
+			<p><br><br><br></p>
+		</div>
+		
+		<div name="region">
+			<a name="regional"></a>
+			<h2 class="subtitle" 
+			    onmouseenter="msg.text='Educational Attainment: Region-level Breakdown of University Students';speechSynthesis.speak(msg)">Educational 
+				Attainment: Region-level Breakdown of University Students</h2>
+			
+			<form id="tree-form">
+				<div class="radio-toolbar">
+					<input type="radio" id="mode1" name="treeSum" value="number" checked>
+					<label for="mode1" onmouseenter="msg.text='Pursuing a Masters degree (in # of students)';speechSynthesis.speak(msg)">Pursuing
+						a Masters degree (in # of students)</label>
+					<input type="radio" id="mode2" name="treeSum" value="percent">
+					<label for="mode2" onmouseenter="msg.text='Pursuing a Masters degree (in %)';speechSynthesis.speak(msg)">Pursuing a
+						Masters degree (in %)</label>
+					<input type="radio" id="mode3" name="treeSum" value="male">
+					<label for="mode3" onmouseenter="msg.text='Males in College (18-24yrs)(in %)';speechSynthesis.speak(msg)">Males in College
+						(18-24yrs)(in %)</label>
+					<input type="radio" id="mode4" name="treeSum" value="femal">
+					<label for="mode4" onmouseenter="msg.text='Females in College (18-24yrs) (in %)';speechSynthesis.speak(msg)">Females in College
+						(18-24yrs) (in %)</label>
+				</div>
+			</form>
+		</div>
+		
+		<p></p>
+		<div id="state-level">
+			<div id="chart"></div>
+			<a name="state"></a>
+			<p><br><br></p>
+			
+			<h2 class="subtitle"
+			    onmouseenter="msg.text='Education Level of Population in Schooling: State-level Breakdown';speechSynthesis.speak(msg)">Education 
+				Level of Population in Schooling: State-level Breakdown</h2>
+			
+			<form id="stack-form">
+				<div class="radio-toolbar">
+					<input type="radio" id="radio1" name="mode" value="bypercent" checked>
+					<label for="radio1" onmouseenter="msg.text='Students (in %)';speechSynthesis.speak(msg)">Students (in %)</label>
+					<input type="radio" id="radio2" name="mode" value="bycount">
+					<label for="radio2" onmouseenter="msg.text='Students (in number of people)';speechSynthesis.speak(msg)">Students 
+						(in number of people)</label>
+				</div>
+			</form>
+			<div>
+				<svg id="stacked-bar-chart"></svg>
+			</div>
+		</div>
+		
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script src="assets/scripts/script_1.js"></script>
+		<script src="assets/scripts/script_2.js"></script>
+		<script src="assets/scripts/script_3.js"></script>
+		<script src="assets/scripts/showHideScripts.js"></script>
+		<script>
+			$( document ).ready(function() {
+				$(window).scroll(function(){
+					if ($(window).scrollTop() >= 300) {
+						$('nav').addClass('fixed-header');
+					}
+					else {
+						$('nav').removeClass('fixed-header');
+					}
+				});
+			});
+			/* scrollTop() >= 240
+			Should be equal the the height of the header
+			*/
+		</script>
+	</body>
 </html>
