@@ -23,10 +23,10 @@
   <header>
        <nav>
     <ul>
-       <li><a href="#top" onmouseover="bleep.play()">Top</a></li>
-      <li><a href="#national" onmouseover="bleep.play()">National</a></li>
-      <li><a href="#regional" onmouseover="bleep.play()">Regional</a></li>
-      <li><a href="#state" onmouseover="bleep.play()">State-Level</a></li>
+       <li><a href="#top" onmouseover="bleep.play()" onmouseclick="showHide('top')">Top</a></li>
+      <li><a href="#national" onmouseover="bleep.play()" onmouseclick="showHide('pie-chart')">National</a></li>
+      <li><a href="#regional" onmouseover="bleep.play()" onmouseclick="showHide('tree-form')">Regional</a></li>
+      <li><a href="#state" onmouseover="bleep.play()" onmouseclick="showHide('stack-form')">State-Level</a></li>
     </ul>
 	    </nav>
 
@@ -86,13 +86,14 @@
 
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="assets/scripts/script_1.js"></script>
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
+	<script src="assets/scripts/showHideScripts.js"></script>
 
 <script>
     $( document ).ready(function() {
@@ -110,6 +111,8 @@
    Should be equal the the height of the header
  */
 </script>
+	
+
 
 </body>
 </html>
