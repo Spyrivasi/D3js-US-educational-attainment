@@ -10,6 +10,9 @@ function unhide(divID) {
   if (item) {
     item.className='unhidden';
   }
+  else {
+    document.title = "other";
+  }
 }
 
 function hide(divID) {
