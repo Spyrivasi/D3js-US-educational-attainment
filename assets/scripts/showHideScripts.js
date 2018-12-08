@@ -5,6 +5,20 @@
  * www.jtricks.com/javascript/blocks/showinghiding.html 
  */  
  
+function unhide(divID) {
+  var item = document.getElementById(divID);
+  if (item) {
+    item.className='unhidden';
+  }
+}
+
+function hide(divID) {
+  var item = document.getElementById(divID);
+  if (item) {
+    item.className='hidden';
+  }
+}
+
 function showHide(what) {
   if (what == "top") {
     showPageElement("nation");
