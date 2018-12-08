@@ -22,10 +22,10 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="#top" onmouseover="bleep.play()" onmouseclick="showHide('top')">Top</a></li>
-				<li><a href="#national" onmouseover="bleep.play()" onmouseclick="document.getElementById('nation').style.display='none'">National</a></li>
-				<li><a href="#regional" onmouseover="bleep.play()" onmouseclick="showHide('region')">Regional</a></li>
-				<li><a href="#state" onmouseover="bleep.play()" onmouseclick="showHide('state-level')">State-Level</a></li>
+				<li><a href="#top" onmouseover="bleep.play()" onmouseclick="unhide('nation');unhide('region');unhide('state-level')">Top</a></li>
+				<li><a href="#national" onmouseover="bleep.play()" onmouseclick="unhide('nation');hide('region');hide('state-level')">National</a></li>
+				<li><a href="#regional" onmouseover="bleep.play()" onmouseclick="hide('nation');unhide('region');hide('state-level')">Regional</a></li>
+				<li><a href="#state" onmouseover="bleep.play()" onmouseclick="hide('nation');hide('region');unhide('state-level')">State-Level</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -36,7 +36,7 @@
 			Attainment in the United States</h1>
 		<p><br></p>
 		
-		<div id="nation">
+		<div id="nation" class="unhidden">
 			<a name="national"></a>
 			<h2 class="subtitle" 
 			    onmouseenter="msg.text='Nation-Wide Education Level of Population in Schooling';speechSynthesis.speak(msg)">Nation-Wide
@@ -45,7 +45,7 @@
 			<p><br><br><br></p>
 		</div>
 		
-		<div name="region">
+		<div name="region" class="unhidden">
 			<a name="regional"></a>
 			<h2 class="subtitle" 
 			    onmouseenter="msg.text='Educational Attainment: Region-level Breakdown of University Students';speechSynthesis.speak(msg)">Educational 
@@ -70,7 +70,7 @@
 		</div>
 		
 		<p></p>
-		<div id="state-level">
+		<div id="state-level" class="unhidden">
 			<div id="chart"></div>
 			<a name="state"></a>
 			<p><br><br></p>
