@@ -7,27 +7,27 @@
  
 function showHide(what) {
   if (what == "top") {
-    showPageElement("pie-chart");
-    showPageElement("tree-form");
-    showPageElement("stack-form");
+    showPageElement("nation");
+    showPageElement("region");
+    showPageElement("state-level");
     return false;
   }
-  if (what == "pie-chart") {
-    showPageElement("pie-chart");
-    hidePageElement("tree-form");
-    hidePageElement("stack-form")
+  if (what == "nation") {
+    showPageElement("nation");
+    hidePageElement("region");
+    hidePageElement("state-level")
     return false;
   }
-  if (what == "tree-form") {
-    hidePageElement("pie-chart");
-    showPageElement("tree-form");
-    hidePageElement("stack-form");
+  if (what == "region") {
+    hidePageElement("nation");
+    showPageElement("region");
+    hidePageElement("state-level");
     return false;
   }
-  if (what == "stack-form") {
-    hidePageElement("pie-chart");
-    hidePageElement("tree-form");
-    showPageElement("stack-form");
+  if (what == "state-level") {
+    hidePageElement("nation");
+    hidePageElement("region");
+    showPageElement("state-level");
     return false;
   }
   return false;
