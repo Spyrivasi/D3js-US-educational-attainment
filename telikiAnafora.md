@@ -15,14 +15,14 @@
 Για κάθε ένα από τα ερωτήματα του παραδοτέου 1, προσπάθησα να βρω τα αρχεία τα οποία χρειάζονταν αλλαγές. Στα αρχεία αυτά έκανα τις αλλαγές, και μετά από κάθε commit δοκίμαζα αν είχε επιτευχθεί η επιθυμητή συμπεριφορά. Εφόσον αυτό είχε πετύχει, ολοκλήρωνα την εργασία. Διαφορετικά έψαχνα νέους τρόπους. Για να βρω πώς θα κάνω κάθε ένα από τα ερωτήματα, πολλές φορές χρησιμοποίησα την αναζήτηση σε Google ή Yahoo, για να βρω τρόπους επίλυσης του προβλήματος. Χρησιμοποίησα το codepen. Επίσης χρησιμοποίησα και τους συνδέσμους που μας είχαν δοθεί με την εκφώνηση της εργασίας. 
 
 Τα αρχεία που τροποποίησα για το πρώτο παραδοτέο είναι τα ακόλουθα: 
-https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/index.html
-https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/script_1.js
-https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/script_2.js
-https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/script_3.js
-https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/stylesheets/style.css
+- https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/index.html
+- https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/script_1.js
+- https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/script_2.js
+- https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/script_3.js
+- https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/stylesheets/style.css
 
 Για το δεύτερο παραδοτέο δημιουργήθηκαν τα επόμενα αρχεία:
-https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/showHideScripts.js (με τις javascript συναρτήσεις για εμφάνιση και απόκρυψη των διαγραμμάτων)
+- https://github.com/Spyrivasi/D3js-US-educational-attainment/blob/master/assets/scripts/showHideScripts.js (με τις javascript συναρτήσεις για εμφάνιση και απόκρυψη των διαγραμμάτων)
 
 ενώ τροποποιήθηκα και τα αρχεία που περιγράφονται παραπάνω.
 
