@@ -7,13 +7,30 @@
  
 function showHide(what) {
   if (what == "top") {
-    showPageElement("pie-chart);
-    showPageElement("tree-form);
-    showPageElement("stack-form);
+    showPageElement("pie-chart");
+    showPageElement("tree-form");
+    showPageElement("stack-form");
     return false;
   }
-  
-  
+  if (what == "pie-chart") {
+    showPageElement("pie-chart");
+    hidePageElement("tree-form");
+    hidePageElement("stack-form")
+    return false;
+  }
+  if (what == "tree-form") {
+    hidePageElement("pie-chart");
+    showPageElement("tree-form");
+    hidePageElement("stack-form");
+    return false;
+  }
+  if (what == "stack-form") {
+    hidePageElement("pie-chart");
+    hidePageElement("tree-form");
+    showPageElement("stack-form");
+    return false;
+  }
+  return false;
 }
 function showPageElement(what)  
 {  
